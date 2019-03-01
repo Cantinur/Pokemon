@@ -5,32 +5,16 @@
         android:layout_height="match_parent"
         android:gravity="top|center"
         android:background="#ffffff"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+>
 
-    <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:id="@+id/pokemon_image"
-            android:src="@drawable/pikachu"
-    />
-    <TextView
-            android:id="@+id/pokemon_name"
-            android:text="NAME"
-            android:textSize="24sp"
+    <fragment
+            android:name="com.example.pokemon.DetailPokemonFragment"
+            android:id="@+id/details_fragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_detail_pokemon"
     />
-
-    <TextView
-            android:id="@+id/pokemon_description"
-            android:text="text"
-            android:textSize="14sp"
-            android:layout_gravity="left"
-            android:layout_marginStart="80sp"
-            android:layout_marginEnd="80sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-    />
-
 
 </LinearLayout>
